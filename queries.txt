@@ -1,0 +1,15 @@
+SELECT * FROM salaries1;
+SELECT EmployeeName,JobTitle from salaries1;
+SELECT count(Id) from salaries1;
+SELECT distinct(JobTitle) from salaries1;
+SELECT JobTitle,OvertimePay from salaries1 where OvertimePay > 50000;
+SELECT avg(BasePay) from salaries1;
+SELECT TotalPay from salaries1 order by 'TotalPay' Desc limit 10;
+SELECT avg(BasePay),avg(OvertimePay),avg(OtherPay) from salaries1;
+SELECT EmployeeName,JobTitle from salaries1 where JobTitle like '%Manager%';
+SELECT EmployeeName,JobTitle from salaries1 where JobTitle not like '%Manager%';
+SELECT EmployeeName from salaries1 where TotalPay between 50000 and 75000;
+SELECT EmployeeName from salaries1 where BasePay < 50000 or TotalPay > 100000;
+SELECT EmployeeName,TotalPayBenefits from salaries1 where TotalPayBenefits between 125000 and 150000 and JobTitle like '%Director%';
+SELECT EmployeeName from salaries1 order by TotalPayBenefits Desc;
+SELECT JobTitle,avg(BasePay) from salaries1 group by JobTitle having avg(BasePay) >= 100000 order by avg(BasePay) Desc;
