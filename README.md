@@ -15,3 +15,8 @@
   SELECT EmployeeName,JobTitle from salaries1;
 ```
 ![image](https://github.com/user-attachments/assets/e00603f0-d905-4623-98df-0214f63986e5)
+
+```bash
+  SELECT count(Id) from salaries1;
+```
+![image](https://github.com/user-attachments/assets/a902d844-277b-48e0-9fbb-942e1c4e640b)
